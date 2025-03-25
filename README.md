@@ -31,4 +31,4 @@ The design process considered also the integration of structured meta-informatio
 
 \[4\] M. Poveda-Villalón, A. Fernández-Izquierdo, M. Fernández-López, R. García-Castro "LOT: An industrial oriented ontology engineering framework", Engineering Applications of Artificial Intelligence, 111, 2022.
 
-\[5\] PROV-O
+\[5\] P. Missier, K. Belhajjame and J. Cheney "The W3C PROV family of specifications for modelling provenance metadata", in: Proceedings of the 16th International Conference on Extending Database Technology, 2013
