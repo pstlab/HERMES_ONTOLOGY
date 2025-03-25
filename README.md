@@ -1,2 +1,2 @@
-# HERMES_ONTOLOGY
-An ontology to support theamtic descriptions of cultural heritage
+# HERMES Ontology
+An ontology to support thematic descriptions of cultural heritage
