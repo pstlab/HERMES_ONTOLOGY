@@ -14,5 +14,7 @@ The ability to semantically correlate intangibles with tangibles is key to unloc
 ## References
 
 \[1\] N. Guarino, "Understanding, building and using ontologies", International Journal of Human-Computer Studies, 46(2), 1997.
+
 \[2\] S. Borgo, R. Ferrario, A. Gangemi, N. Guarino, C. Masolo, D. Porello, E.M. Sanfilippo and L. Vieu, "DOLCE: A descriptive ontology for linguistic and cognitive engineering", Applied Ontology 17(1), 2022.
-\[4\] V.A. Carriero, A. Gangemi, M.L. Mancinelli, L. Marinucci, A.G. Nuzzolese, V.. Presutti and C. Veninata, "ArCo: The Italian Cultural Heritage Knowledge Graph", in: "The Semantic Web – ISWC 2019", 2019.
+
+\[3\] V.A. Carriero, A. Gangemi, M.L. Mancinelli, L. Marinucci, A.G. Nuzzolese, V.. Presutti and C. Veninata, "ArCo: The Italian Cultural Heritage Knowledge Graph", in: "The Semantic Web – ISWC 2019", 2019.
