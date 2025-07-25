@@ -3,12 +3,16 @@
      xml:base="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:ADMS="https://w3id.org/italia/onto/ADMS/"
      xmlns:core="https://w3id.org/arco/ontology/core/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:opla="http://ontologydesignpatterns.org/opla/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -144,73 +148,6 @@ Es. Domus Aurea Description hasTopic Archeology</rdfs:comment>
     
 
 
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_information"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_elderly -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_elderly">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility"/>
-        <rdfs:comment xml:lang="it">Questa proprietà ha sempre un valore booleano (vero/falso) e consente di definire se un determinato POI è accessibile agli anziani.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property always has a boolean value (true/false), it allows to define whether a given POI is accessible to elderly.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_groups -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_groups">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility"/>
-        <rdfs:comment xml:lang="it">Questa proprietà ha sempre un valore booleano (vero/falso) e consente di definire se un determinato POI è accessibile ai gruppi.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property always has a boolean value (true/false), it allows to define whether a given POI is accessible to groups.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_hearing_disability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_hearing_disability">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility"/>
-        <rdfs:comment>Questa proprietà ha sempre un valore booleano (vero/falso) e consente di definire se un particolare POI è accessibile alle persone con disabilità uditive.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property always has a Boolean value (true/false) and allows to define whether a particular POI is accessible to people with hearing disabilities.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_motor_disability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_motor_disability">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility"/>
-        <rdfs:comment xml:lang="it">Questa proprietà ha sempre un valore booleano (vero/falso) e consente di definire se un particolare POI è accessibile alle persone con disabilità motorie.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property always has a Boolean value (true/false) and allows to define whether a particular POI is accessible to people with motor disabilities.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_visual_disability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_visual_disability">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility"/>
-        <rdfs:comment xml:lang="it">Questa proprietà ha sempre un valore booleano (vero/falso) e consente di definire se un determinato POI è accessibile alle persone con disabilità visive.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property always has a Boolean value (true/false) and allows to define whether a given POI is accessible to people with visual impairments.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#authorization_instructions -->
-
-    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#authorization_instructions">
-        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_information"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#email -->
 
     <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#email">
@@ -223,6 +160,7 @@ Es. Domus Aurea Description hasTopic Archeology</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#opening_hours">
         <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_information"/>
+        <rdfs:domain rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
         <rdfs:comment xml:lang="it">Questa property descrive gli orari di apertura di un bene culturale.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property describes the opening hours of a cultural property.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -233,6 +171,14 @@ Es. Domus Aurea Description hasTopic Archeology</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#phone">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/arco/ontology/context-description/contacts"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#reservation_instructions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#reservation_instructions">
+        <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_information"/>
     </owl:DatatypeProperty>
     
 
@@ -249,6 +195,7 @@ Es. Domus Aurea Description hasTopic Archeology</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_price">
         <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_information"/>
+        <rdfs:domain rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
         <rdfs:comment xml:lang="it">Questa property da informazioni circa il prezzo del biglietto di ingresso di un bene culturale.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property gives information about the price of the entrance fee of a cultural property.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -259,6 +206,7 @@ Es. Domus Aurea Description hasTopic Archeology</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_time">
         <rdfs:subPropertyOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_information"/>
+        <rdfs:domain rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
         <rdfs:comment xml:lang="it">Questa proprietà descrive il tempo minimo di visita di un bene culturale. Il tempo è espresso in minuti, sotto forma di numero decimale.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property describes the minimum visiting time of a cultural property. The time is expressed in minutes, in the form of a decimal number.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -619,6 +567,26 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     
 
 
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#opening_hours"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_time"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalTradition -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalTradition">
@@ -685,6 +653,14 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     
 
 
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ElderlyAccessibility -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ElderlyAccessibility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Emperor -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Emperor">
@@ -742,10 +718,10 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     
 
 
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeAvailability -->
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting -->
 
-    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeAvailability">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAvailability"/>
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting">
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
     </owl:Class>
     
 
@@ -754,6 +730,14 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Gods">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ReligiousActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#GroupAccessibility -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#GroupAccessibility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
     </owl:Class>
     
 
@@ -770,13 +754,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#HearingImpairedAccessibility -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#HearingImpairedAccessibility">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleImpairedAccessibility"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_hearing_disability"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
     </owl:Class>
     
 
@@ -965,13 +943,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MotorImpairedAccessibility -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MotorImpairedAccessibility">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleImpairedAccessibility"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_motor_disability"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
     </owl:Class>
     
 
@@ -1054,6 +1026,40 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
     
 
 
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting">
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_price"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting">
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_price"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#reservation_instructions"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OpusSectile -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OpusSectile">
@@ -1082,21 +1088,6 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OtiumHabit">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RomanHabit"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PaidAvailability -->
-
-    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PaidAvailability">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAvailability"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_price"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1320,21 +1311,6 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ReliquieRitual">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ContemporaryRitual"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RestrictedAvailability -->
-
-    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RestrictedAvailability">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAvailability"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#authorization_instructions"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1697,79 +1673,6 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
     
 
 
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAccessibility -->
-
-    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAccessibility">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_elderly"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_groups"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAvailability -->
-
-    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAvailability">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAvailability"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#opening_hours"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_time"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleImpairedAccessibility -->
-
-    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleImpairedAccessibility">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAccessibility"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_hearing_disability"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_motor_disability"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_visual_disability"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Technology -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Technology">
@@ -1978,13 +1881,7 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleImpairedAccessibility"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#accessibility_visual_disability"/>
-                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
     </owl:Class>
     
 
@@ -2061,16 +1958,8 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
     <rdf:Description rdf:about="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/arco/ontology/denotative-description/hasCulturalPropertyAccessibility"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAccessibility"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/arco/ontology/denotative-description/hasCulturalPropertyAvailability"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TangibleAvailability"/>
+                <owl:onProperty rdf:resource="https://w3id.org/arco/ontology/core/hasCulturalEntityCharacteristic"/>
+                <owl:someValuesFrom rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -2107,9 +1996,57 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Scultore_const">
         <rdfs:label>Scultore</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_accessibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_accessibility">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ElderlyAccessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_accessibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_accessibility">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#GroupAccessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#HearingImpairedAccessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MotorImpairedAccessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
