@@ -18,16 +18,20 @@ If you don't already have an ontology editor, we recommend using Protégé (Vers
 To explore the HerMeS ontological structure:
 
 1️⃣ Download the ontology file hermes_ontology_v1.1.rdf
+
 2️⃣ Open it with Protégé or any other ontology editor
-*Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as https://w3id.org/arco/ontology/immovable-property/0.2—might be deprecated or temporarily unavailable.*
+*Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as w3id.org/arco/ontology/immovable-property/0.2 might be deprecated or temporarily unavailable.*
+
 3️⃣ Navigate through the ontology. Example: Search for the subclass "Nature", open OntoGraf, and explore how it relates to other classes.
 
 
 To explore the HerMeS Knowledge Graph, including individuals from Rione Monti and Rione Esquilino:
 
 1️⃣ Download the file hermes_kg_rome_rMonti_v1.0.rdf.
+
 2️⃣ Open it with Protégé or any other ontology editor.
-*Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as https://w3id.org/arco/ontology/immovable-property/0.2—might be deprecated or temporarily unavailable.*
+*Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as w3id.org/arco/ontology/immovable-property/0.2 might be deprecated or temporarily unavailable.*
+
 3️⃣Explore the knowledge graph. Example: Search for the class "Festivity", open OntoGraf, and examine the individuals that are part of this class
 
 
