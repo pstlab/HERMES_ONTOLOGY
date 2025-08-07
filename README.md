@@ -24,7 +24,7 @@ To explore the HerMeS ontological structure:
 
 3️⃣ Navigate through the ontology. Example: Search for the subclass "Nature", open OntoGraf, and explore how it relates to other classes.
 
-![Figure 1. Representation of class "Nature" in HerMeS ontology](.\assets\readme\HerMeS_Nature.png)
+![Figure 1. Representation of class "Nature" in HerMeS ontology](assets/readme/HerMeS_Nature.png)
 
 To explore the HerMeS Knowledge Graph, including individuals from Rione Monti and Rione Esquilino:
 
@@ -35,7 +35,7 @@ To explore the HerMeS Knowledge Graph, including individuals from Rione Monti an
 
 3️⃣Explore the knowledge graph. Example: Search for the class "Festivity", open OntoGraf, and examine the individuals that are part of this class
 
-![Figure 2. Representation of class "Festivity" in HerMeS ontology](.\assets/readme/HerMeS_Festivity.png)
+![Figure 2. Representation of class "Festivity" in HerMeS ontology](assets/readme/HerMeS_Festivity.png)
 
 ## About HerMeS Ontology
 
