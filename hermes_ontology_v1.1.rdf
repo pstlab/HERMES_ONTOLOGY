@@ -722,6 +722,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <owl:disjointWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting"/>
     </owl:Class>
     
 
@@ -2009,9 +2010,7 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
 
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access -->
 
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access"/>
     
 
 
