@@ -571,18 +571,6 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#opening_hours"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_time"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -721,7 +709,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
         <owl:disjointWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting"/>
     </owl:Class>
     
@@ -1027,10 +1015,19 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
     
 
 
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <owl:disjointWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_price"/>
@@ -1044,7 +1041,7 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting">
-        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_price"/>
@@ -1879,6 +1876,26 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
     
 
 
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity -->
+
+    <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#opening_hours"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#visiting_time"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility -->
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility">
@@ -2034,6 +2051,14 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
 
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MotorImpairedAccessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_non_visitable -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_non_visitable">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity"/>
     </owl:NamedIndividual>
     
 
