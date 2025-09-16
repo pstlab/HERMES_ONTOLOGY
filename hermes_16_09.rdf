@@ -5151,24 +5151,33 @@ Il complesso monumentale, che si propone di offrire spazi espositivi, servizi cu
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoNazionaleRomano">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoNazionaleRomanoChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneEsquilino"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoNazionaleRomanoDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:accessibility_visual_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_visual_disability>
-        <hermes:opening_hours>Dal martedì alla domenica
-9.30 – 19.00
-la biglietteria chiude alle 18.00
-Chiuso il lunedì</hermes:opening_hours>
-        <hermes:visitability>Ingresso libero o su prenotazione</hermes:visitability>
-        <hermes:visiting_price>Intero € 8, Ridotto € 2, Gratuito la prima domenica di ogni mese e nelle aperture straordinarie: https://museonazionaleromano.beniculturali.it/orari-e-biglietti/#</hermes:visiting_price>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hermes:visiting_time>
         <context-description:address>Largo di Villa Peretti, 1</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.9016145061877</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.498033057626024</location:long>
         <rdfs:label>Museo Nazionale Romano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoNazionaleRomanoChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoNazionaleRomanoChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting"/>
+        <hermes:opening_hours>Dal martedì alla domenica
+9.30 – 19.00
+la biglietteria chiude alle 18.00
+Chiuso il lunedì</hermes:opening_hours>
+        <hermes:visiting_price>Intero € 8, Ridotto € 2, Gratuito la prima domenica di ogni mese e nelle aperture straordinarie: https://museonazionaleromano.beniculturali.it/orari-e-biglietti/#</hermes:visiting_price>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5236,16 +5245,23 @@ Gratuito (under 18, prima domenica del mese)</hermes:visiting_price>
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanisperna"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoStoricoFisicaChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanisperna"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoStoricoFisicaDescription"/>
-        <hermes:opening_hours>Per gruppi e scolaresche e possibile fissare una visita guidata. Per i singoli sono previsti specifici Open Day ed è comunque richiesta prenotazione</hermes:opening_hours>
-        <hermes:visitability>Accessibile solo su prenotazione</hermes:visitability>
-        <hermes:visiting_price>Gratuito durante gli Open Day</hermes:visiting_price>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hermes:visiting_time>
         <context-description:address>Via Panisperna, 89a</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89808847349489</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.493782282808592</location:long>
         <rdfs:label>Museo Storico della Fisica e Centro Studi e Ricerche Enrico Fermi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoStoricoFisicaChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MuseoStoricoFisicaChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting"/>
+        <hermes:opening_hours>Per gruppi e scolaresche e possibile fissare una visita guidata. Per i singoli sono previsti specifici Open Day ed è comunque richiesta prenotazione</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5340,20 +5356,28 @@ Fonte: http://www.iccd.beniculturali.it/getFile.php?id=7392</rdfs:comment>
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#GiardinodiPiazzaVittorio"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NuovoMercatoEsquilinoChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneEsquilino"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NuovoMercatoEsquilinoDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:accessibility_visual_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_visual_disability>
-        <hermes:opening_hours>Dal Lunedì al Sabato: 7:00 – 15:00</hermes:opening_hours>
-        <hermes:visitability>ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>via Principe Amedeo 184</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89605927502448</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.50696305767236</location:long>
         <rdfs:label>Nuovo Mercato Esquilino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NuovoMercatoEsquilinoChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NuovoMercatoEsquilinoChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>Dal Lunedì al Sabato: 7:00 – 15:00</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5456,15 +5480,13 @@ Fonte: https://www.treccani.it/enciclopedia/orazio-poesia-e-saggezza-di-fronte-a
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoCollegiNeofitiCatecumeni">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoCollegioNeofitiCatecumeniChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoCollegiNeofitiCatecumeniDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:accessibility_visual_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_visual_disability>
-        <hermes:opening_hours>dal Lunedi al venerdì 08 - 20</hermes:opening_hours>
-        <hermes:visitability>ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</hermes:visiting_time>
         <context-description:address>via della Madonna dei Monti 40</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89443074212975</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.490152155759063</location:long>
@@ -5484,26 +5506,42 @@ Fonte: https://www.treccani.it/enciclopedia/orazio-poesia-e-saggezza-di-fronte-a
     
 
 
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoCollegioNeofitiCatecumeniChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoCollegioNeofitiCatecumeniChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>dal Lunedi al venerdì 08 - 20</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</hermes:visiting_time>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoEsposizioniRoma -->
 
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoEsposizioniRoma">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoEsposizioniRomaChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoEsposizioniRomaDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:opening_hours>dal martedì alla domenica 10.00 - 20.00, lunedì chiuso</hermes:opening_hours>
-        <hermes:visitability>Visite per individuali in calendario e su prenotazione disponibili in Italiano
-Visite per gruppi e scuole su prenotazione disponibili in Italiano, Inglese, Francese, Tedesco, Spagnolo</hermes:visitability>
-        <hermes:visiting_price>Varia in base alla mostra in programma</hermes:visiting_price>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hermes:visiting_time>
         <context-description:address>Via Nazionale, 194</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.899675212563466</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.490146399999997</location:long>
         <rdfs:label>Palazzo Esposizioni Roma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoEsposizioniRomaChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoEsposizioniRomaChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting"/>
+        <hermes:opening_hours>dal martedì alla domenica 10.00 - 20.00, lunedì chiuso</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5528,19 +5566,27 @@ La scienza, le nuove tecnologie, i linguaggi del sapere sono la porta del Palazz
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoFreddoFassi">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoFreddoFassiChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneEsquilino"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoFreddoFassiDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:accessibility_visual_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_visual_disability>
-        <hermes:opening_hours>lunedì - giovedì 12 - 21, venerdì e sabato 12 - 00, domenica 10 - 21</hermes:opening_hours>
-        <hermes:visitability>ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>VIA PRINCIPE EUGENIO 65/67</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89360348214594</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.508095291416792</location:long>
         <rdfs:label>Palazzo del Freddo Fassi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoFreddoFassiChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoFreddoFassiChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>lunedì - giovedì 12 - 21, venerdì e sabato 12 - 00, domenica 10 - 21</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5562,14 +5608,22 @@ La scienza, le nuove tecnologie, i linguaggi del sapere sono la porta del Palazz
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrillo">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ComplessoMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrilloChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrilloDescription"/>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>piazza del Grillo 5</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89500293012446</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.487011316981969</location:long>
         <rdfs:label>Palazzo del Grillo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrilloChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrilloChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5642,18 +5696,25 @@ In epoca contemporanea si può parlare di un’unica Chiesa ortodossa solo in se
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ProverbioSanMartino"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTraiano"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaMartinoMontiChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaMartinoMontiDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:visitability>Ingresso libero</hermes:visitability>
-        <hermes:visiting_price>Accesso libero</hermes:visiting_price>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>piazza S. Martino ai Monti</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89492177282108</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.497376912665697</location:long>
         <rdfs:label>Piazza S. Martino ai Monti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaMartinoMontiChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaMartinoMontiChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5677,19 +5738,27 @@ In epoca contemporanea si può parlare di un’unica Chiesa ortodossa solo in se
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaSuburra">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ComplessoMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaSuburraChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaMadonnaMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaSuburraDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:accessibility_visual_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_visual_disability>
-        <hermes:visitability>ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>piazza della Suburra</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.894947283623786</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.492967558896261</location:long>
         <rdfs:label>Piazza della Suburra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaSuburraChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaSuburraChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -5740,13 +5809,22 @@ In epoca contemporanea si può parlare di un’unica Chiesa ortodossa solo in se
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#BasilicaSotterraneaPortaMaggiore"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SepolcroMVEurisace"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PortaMaggioreChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneEsquilino"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PortaMaggioreDescription"/>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>Piazza di Porta Maggiore</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89314587202457</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.515000027826552</location:long>
         <rdfs:label>Porta Maggiore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PortaMaggioreChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PortaMaggioreChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6290,17 +6368,25 @@ Sant&apos;Eusebio nacque a Roma attorno al 319, in quel periodo governava l&apos
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#BasilicaSantaPrassede"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SacelloSZenoneChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#BasilicaSantaPrassede"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SacelloSZenoneDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:opening_hours>8:00 - 19:00</hermes:opening_hours>
-        <hermes:visitability>Ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>via di S. Prassede (9/A la Chiesa non ha numero civico, al civico 9A c&apos;è il Monastero di Santa Prassede)</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89651263479766</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.49889018650675</location:long>
         <rdfs:label>Sacello di S. Zenone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SacelloSZenoneChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SacelloSZenoneChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>8:00 - 19:00</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6408,15 +6494,24 @@ https://www.vaticannews.va/it/chiesa/news/2021-03/la-basilica-di-santa-prassede-
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#LeggendaVicusSceleratus"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ScalinataBorgiaChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneEsquilino"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ScalinataBorgiaDescription"/>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>Via Cavour, 256</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89848516848264</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.49189677809598</location:long>
         <rdfs:label>Scalinata dei Borgia/Vicus sceleratus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ScalinataBorgiaChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ScalinataBorgiaChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6477,14 +6572,22 @@ Fonte: https://www.turismoroma.it/wp-content/uploads/2013/05/08-La-ruota-della-s
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SepolcroMVEurisace">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SepolcroMVEurisaceChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PortaMaggiore"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SepolcroMVEurisaceDescription"/>
-        <hermes:visitability>Visibile dall’esterno</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>Piazzale Labicano</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89144855767664</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.515316038442245</location:long>
         <rdfs:label>Sepolcro di Marco Virgilio Eurisace/ Tomba del Fornaio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SepolcroMVEurisaceChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SepolcroMVEurisaceChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6585,15 +6688,23 @@ Fonte: Sovrintendenza Roma</rdfs:comment>
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#SantaCroceInGerusalemme"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Hermes_Admin"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TempioMinervaMedicaChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneEsquilino"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TempioMinervaMedicaDescription"/>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:visitability>Il sito è accessibile solo con visita guidata con prenotazione obbligatoria www.coopculture.it.</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>Via Giovanni Giolitti, 166</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.895183032607456</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.511811956898189</location:long>
         <rdfs:label>Tempio di Minerva Medica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TempioMinervaMedicaChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TempioMinervaMedicaChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6631,19 +6742,27 @@ Con le sue leggere eppure altissime pareti, ampie aperture verso l’esterno, un
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTito">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTitoChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTitoDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
         <hermes:opening_hours>dalle ore 7.00 al tramonto</hermes:opening_hours>
-        <hermes:visitability>Ingresso libero</hermes:visitability>
-        <hermes:visiting_price>accesso libero</hermes:visiting_price>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>via N. Salvi</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89274831114251</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.493968228835582</location:long>
         <rdfs:label>Terme di Tito</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTitoChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTitoChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>dalle ore 7.00 al tramonto</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6665,19 +6784,26 @@ Con le sue leggere eppure altissime pareti, ampie aperture verso l’esterno, un
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTraiano">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ComplessoMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTraianoChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTraianoDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:opening_hours>dalle ore 7.00 al tramonto</hermes:opening_hours>
-        <hermes:visitability>Ingresso libero</hermes:visitability>
-        <hermes:visiting_price>accesso libero</hermes:visiting_price>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>via di Monte Oppio</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89236328357115</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.496910571164417</location:long>
         <rdfs:label>Terme di Traiano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTraianoChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TermeTraianoChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>dalle ore 7.00 al tramonto</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6744,16 +6870,24 @@ Fonte: https://it.wikipedia.org/wiki/Titulus</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreDeiConti">
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreDeiContiChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreDeiContiDescription"/>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:visitability>attualmente non visitabile</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>Via Tor de&apos; Conti, 36</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.893830002294436</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.487940736506577</location:long>
         <rdfs:label>Torre dei Conti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreDeiContiChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreDeiContiChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6777,16 +6911,24 @@ Fonte: https://it.wikipedia.org/wiki/Titulus</rdfs:comment>
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#UnitaMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrillo"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreGrilloChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PalazzoGrillo"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreGrilloDescription"/>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:visitability>Ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
         <context-description:address>salita del Grillo 31</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89501725298685</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.486829087738059</location:long>
         <rdfs:label>Torre del Grillo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreGrilloChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TorreGrilloChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6847,14 +6989,22 @@ Fonte: https://it.wikipedia.org/wiki/Titulus</rdfs:comment>
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ComplessoMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#PiazzaSuburra"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaMadonnaMontiChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaMadonnaMontiDescription"/>
-        <hermes:visitability>ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>via della Madonna dei Monti, Roma</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.8943693596833</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.48939113748198</location:long>
         <rdfs:label>Via della Madonna dei Monti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaMadonnaMontiChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaMadonnaMontiChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6881,19 +7031,27 @@ Il nome potrebbe derivare dall&apos;argilla proveniente dalla confluenza delle a
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ComplessoMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ChiesaSLorenzoPanisperna"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanispernaChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanispernaDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_motor_disability>
-        <hermes:accessibility_visual_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_visual_disability>
-        <hermes:visitability>ingresso libero</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>via Panisperna</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.896520375624135</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.491136515700589</location:long>
         <rdfs:label>Via Panisperna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanispernaChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanispernaChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
@@ -6916,19 +7074,27 @@ Il nome potrebbe derivare dall&apos;argilla proveniente dalla confluenza delle a
         <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ComplessoMonumentale"/>
         <hermes:isCorrelatedWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ViaPanisperna"/>
         <prov:wasAttributedTo rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#TouringClubItalia"/>
+        <core:hasCharacteristic rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VillaAldobrandiniChar"/>
         <core:isPartOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#RioneMonti"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc"/>
+        <denotative-description:hasCulturalPropertyAccessibility rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc"/>
         <l0:hasDescription rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VillaAldobrandiniDescription"/>
-        <hermes:accessibility_elderly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_elderly>
-        <hermes:accessibility_groups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_groups>
-        <hermes:accessibility_hearing_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hermes:accessibility_hearing_disability>
-        <hermes:accessibility_motor_disability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hermes:accessibility_motor_disability>
-        <hermes:opening_hours>Tutti i giorni 7 - 18</hermes:opening_hours>
-        <hermes:visitability>Attualmente solo i giardini</hermes:visitability>
-        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
         <context-description:address>via Mazzarino 11</context-description:address>
         <location:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89687092982466</location:lat>
         <location:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.488385782188708</location:long>
         <rdfs:label>Villa Aldobrandini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VillaAldobrandiniChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VillaAldobrandiniChar">
+        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting"/>
+        <hermes:opening_hours>Tutti i giorni 7 - 18</hermes:opening_hours>
+        <hermes:visiting_time rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</hermes:visiting_time>
     </owl:NamedIndividual>
     
 
