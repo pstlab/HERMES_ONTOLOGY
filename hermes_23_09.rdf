@@ -629,7 +629,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/CulturalEntityCharacteristic"/>
-        <rdfs:comment>Questa classe descrive le modalità di accesso a un bene culturale, specificando le condizioni con cui è possibile visitarlo, come ad esempio la prenotazione obbligatoria, l’ingresso a pagamento oppure l’accesso gratuito.</rdfs:comment>
+        <rdfs:comment>This concept characterizes the general visiting information condition of a given POI. The class is further specialized into additional subclasses to distinguish different types of visiting.</rdfs:comment>
     </owl:Class>
     
 
@@ -704,7 +704,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ElderlyAccessibility">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
-        <rdfs:comment>Accessibilità garantita a persone anziane</rdfs:comment>
+        <rdfs:comment>This concept characterizes the condition of supporting elderly accessibility. Whether a given POI supports this type of accessibility is asserted by associating the entity with the constant const_elderly_accessibility through the ArCo property arco:hasCulturalPropertyAccessibility.</rdfs:comment>
     </owl:Class>
     
 
@@ -771,7 +771,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#FreeVisiting">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
         <owl:disjointWith rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting"/>
-        <rdfs:comment>Ingresso gratuito , non a pagamento</rdfs:comment>
+        <rdfs:comment>This class is a particular type of VisitableEntity and characterizes POIs that can be visited for free and do not have any additional visiting restriction.</rdfs:comment>
     </owl:Class>
     
 
@@ -788,7 +788,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#GroupAccessibility">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
-        <rdfs:comment>Accessibilità garantita a gruppi</rdfs:comment>
+        <rdfs:comment>This concept characterizes the condition of supporting group accessibility. Whether a given POI supports this type of accessibility is asserted by associating the entity with the constant const_group_accessibility through the ArCo  property arco:hasCulturalPropertyAccessibility.</rdfs:comment>
     </owl:Class>
     
 
@@ -806,6 +806,7 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#HearingImpairedAccessibility">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
+        <rdfs:comment>This concept characterizes the condition of supporting accessibility for hearing impaired people. Whether a given POI supports this type of accessibility is asserted by associating the entity with the constant const_hearing_imp_acc through the ArCo property arco:hasCulturalPropertyAccessibility.</rdfs:comment>
     </owl:Class>
     
 
@@ -995,6 +996,8 @@ I complessi monumentali possono avere anche una tendenza verticale: per es. una 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MotorImpairedAccessibility">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
+        <rdfs:comment>This concept characterizes the condition of supporting accessibility for motor impaired people. Whether a given POI supports this type of accessibility is asserted by associating the entity with the constant const_motor_imp_acc through the ArCo property
+arco:hasCulturalPropertyAccessibility.</rdfs:comment>
     </owl:Class>
     
 
@@ -1081,6 +1084,7 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:comment>This concept characterizes POIs that cannot be visited but with historical/cultural value that could be included into the cultural path.</rdfs:comment>
     </owl:Class>
     
 
@@ -1089,7 +1093,7 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnPaidVisiting">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
-        <rdfs:comment>Ingresso a pagamento</rdfs:comment>
+        <rdfs:comment>This class is a particular type of VisitableEntity and characterizes POIs whose access is restricted and require some payment fee. It is associated with data property visiting_price specifying information about the fees.</rdfs:comment>
     </owl:Class>
     
 
@@ -1098,7 +1102,7 @@ Es. Il tempio di Iside che occupava il Collegio romano e il Pantheon, di cui si 
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#OnReservationVisiting">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity"/>
-        <rdfs:comment>Prenotazione obbligatoria, a prescindere da pagamento o meno.</rdfs:comment>
+        <rdfs:comment>This class is a particular type of VisitableEntity and characterizes POIs whose access is allowed upon reservation.</rdfs:comment>
     </owl:Class>
     
 
@@ -1925,6 +1929,7 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisitableEntity">
         <rdfs:subClassOf rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#CulturalPropertyVisiting"/>
+        <rdfs:comment>This concept characterizes POIs that can be visited and is generally associated with data properties specifying the average duration of the visit (visiting_time) and the opening hours (opening_hours).</rdfs:comment>
     </owl:Class>
     
 
@@ -1933,6 +1938,7 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
 
     <owl:Class rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility">
         <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/denotative-description/CulturalPropertyAccessibility"/>
+        <rdfs:comment>This concept characterizes the condition of supporting accessibility for visual impaired people. Whether a given POI supports this type of accessibility is asserted by associating the entity with the constant const_visual_imp_acc through the ArCo property arco:hasCulturalPropertyAccessibility.</rdfs:comment>
     </owl:Class>
     
 
