@@ -9,7 +9,7 @@ This repository contains the ontological structure and the knowledge graph used 
 
 🔹hermes_ontology_v1.1.rdf → This is the HerMeS Ontology: a formal definition of the concepts and relationships used within the project's domain.
 
-🔹hermes_kg_rome_rMonti_v1.0.rdf → This is the HerMeS Knowledge Graph (KG): a representation of cultural heritage data based on the HerMeS ontology. The dataset includes 100 tangible and intangible cultural entities distributed across two Roman districts: Rione Monti and Rione Esquilino.
+🔹hermes_kg_rome_rMonti_v1.1.rdf → This is the HerMeS Knowledge Graph (KG): a representation of cultural heritage data based on the HerMeS ontology. The dataset includes 100 tangible and intangible cultural entities distributed across two Roman districts: Rione Monti and Rione Esquilino.
 
 ## How to use
 
@@ -17,7 +17,7 @@ If you don't already have an ontology editor, we recommend using Protégé (Vers
 
 To explore the HerMeS ontological structure:
 
-1️⃣ Download the ontology file hermes_ontology_v1.1.rdf
+1️⃣ Download the ontology file hermes_ontology_v1.0.rdf
 
 2️⃣ Open it with Protégé or any other ontology editor
 *Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as w3id.org/arco/ontology/immovable-property/0.2 might be deprecated or temporarily unavailable.*
