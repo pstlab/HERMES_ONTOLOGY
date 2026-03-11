@@ -23,7 +23,7 @@
      xmlns:catalogue="https://w3id.org/arco/ontology/catalogue/"
      xmlns:context-description="https://w3id.org/arco/ontology/context-description/">
     <owl:Ontology rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes">
-        <owl:versionIRI rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/1.1"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <owl:imports rdf:resource="https://w3id.org/arco/ontology/arco/1.2"/>
     </owl:Ontology>
@@ -2013,60 +2013,6 @@ Rispetto al patrimonio immateriale possiamo annoverare come “sparito” un mes
 
     <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#Scultore_const">
         <rdfs:label>Scultore</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_accessibility -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_elderly_accessibility">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#ElderlyAccessibility"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_free_access"/>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_accessibility -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_group_accessibility">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#GroupAccessibility"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_hearing_imp_acc">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#HearingImpairedAccessibility"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_motor_imp_acc">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#MotorImpairedAccessibility"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_non_visitable -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_non_visitable">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#NonVisitableEntity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc -->
-
-    <owl:NamedIndividual rdf:about="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#const_visual_imp_acc">
-        <rdf:type rdf:resource="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#VisualImpairedAccessibility"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

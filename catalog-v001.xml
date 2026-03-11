@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/1.1" uri="hermes_ontology_v1.1.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/1.1" uri="hermes_ontology_v1.1.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1758187937364" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_16_09.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1758187937364" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.0.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1758187937364" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_kg_rMonti_v1.0.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1758187937364" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.1.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1758187937364" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_kg_rMonti_v1.1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773267771834" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773267771834" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_kg_rMonti_v1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773267771834" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773267771834" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/kg/" uri="hermes_kg_rMonti_v1.1.rdf"/>
     </group>
 </catalog>
