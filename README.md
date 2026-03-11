@@ -9,7 +9,7 @@ This repository contains the ontological structure and the knowledge graph used 
 
 🔹hermes_ontology_v1.1.rdf → This is the HerMeS Ontology: a formal definition of the concepts and relationships used within the project's domain.
 
-🔹hermes_kg_rome_rMonti_v1.0.rdf → This is the HerMeS Knowledge Graph (KG): a representation of cultural heritage data based on the HerMeS ontology. The dataset includes 100 tangible and intangible cultural entities distributed across two Roman districts: Rione Monti and Rione Esquilino.
+🔹hermes_kg_rome_rMonti_v1.1.rdf → This is the HerMeS Knowledge Graph (KG): a representation of cultural heritage data based on the HerMeS ontology. The dataset includes 100 tangible and intangible cultural entities distributed across two Roman districts: Rione Monti and Rione Esquilino.
 
 ## How to use
 
