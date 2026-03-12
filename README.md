@@ -72,11 +72,11 @@ To create a new dataset, go to the page 'manage' and click on 'new dataset' by s
 
 Click on the button 'add data' to upload the triples of the HERMES knowledge graph in this repository. To correctly use the version __v1.1__ you should upload both the knowledge graph  ```hermes_kg_rMonti_v1.1.rdf``` and the ontology ```hermes_ontology_v1.1.rdf```. This is necessary to import the ontology into the memory of fuseki since the 'import' commands are not automatically processed by the endpoint.
 
-When both files have been uploaded you can go to the 'query' page to interact with the knowledge by processing some SPARQL queries. 
+
 
 ![Figure 4. Query page of the Fusek SPARQL endpoint](assets/readme/Fuseki_query.png)
 
-The figure above shows the 'query' page and the results obtained by processing the following SPARQL query.
+When both files have been uploaded you can go to the 'query' page to interact with the knowledge by processing some SPARQL queries. The figure above shows the 'query' page and the results obtained by processing the following SPARQL query.
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
