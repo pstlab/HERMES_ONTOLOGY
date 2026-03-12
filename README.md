@@ -46,12 +46,12 @@ To do so, first be sure to have a Docker enginer installed and correctly running
 
 When docker is correctly running on you machine, downalod the latest ```stain/jena-fuseki``` image from the [Docker Hub](https://hub.docker.com/r/stain/jena-fuseki)
 
-```
+```bash
 docker pull stain/jena-fuseki
 ```
 When the image is available, you can run a new Docker container from the image to instantiate the Fuseki SPARQL endpoint.
 
-```
+```bash
 docker run -p 3030:3030 -e ADMIN_PASSWORD=<PWD> --restart unless-stopped --name fuseki stain/jena-fuseki 
 ```
 
@@ -78,7 +78,7 @@ Click on the button 'add data' to upload the triples of the HERMES knowledge gra
 
 When both files have been uploaded you can go to the 'query' page to interact with the knowledge by processing some SPARQL queries. The figure above shows the 'query' page and the results obtained by processing the following SPARQL query.
 
-```
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX arco-core: <https://w3id.org/arco/ontology/core/>
