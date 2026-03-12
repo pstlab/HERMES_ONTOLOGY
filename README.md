@@ -1,4 +1,4 @@
-# HerMeS Ontology
+e# HerMeS Ontology
 An ontology to support thematic descriptions of cultural heritage
 
 ## Introduction
@@ -36,6 +36,65 @@ To explore the HerMeS Knowledge Graph, including individuals from Rione Monti an
 3️⃣Explore the knowledge graph. Example: Search for the class "Festivity", open OntoGraf, and examine the individuals that are part of this class
 
 ![Figure 2. Representation of class "Festivity" in HerMeS ontology](assets/readme/HerMeS_Festivity.png)
+
+
+### Running a SPARQL Endpoint
+
+To interact with an instance of the knowledge graph it is possible to setup a SPARQL Endpoint using the framework [Apache Fuseki](https://jena.apache.org/documentation/fuseki2/). In addition to the official documentation of the framework, it is available a Docker image that can be easily configured to expose Fuseki services thorugh an intuitive web application.
+
+To do so, first be sure to have a Docker enginer installed and correctly running on the host machine. Follow the [Docker documentation](https://docs.docker.com/engine/install/) for the installation if necessary.
+
+When docker is correctly running on you machine, downalod the latest ```stain/jena-fuseki``` image from the [Docker Hub](https://hub.docker.com/r/stain/jena-fuseki)
+
+```
+docker pull stain/jena-fuseki
+```
+When the image is available, you can run a new Docker container from the image to instantiate the Fuseki SPARQL endpoint.
+
+```
+docker run -p 3030:3030 -e ADMIN_PASSWORD=<PWD> --restart unless-stopped --name fuseki stain/jena-fuseki 
+```
+
+The command above creates a container with ```--name``` fuseki on the host machine. The container is created from the image ```stain/jena-fuseki``` and is reachable thorugh the port ```3030``` of the host machine. Specifically, the docker command maps the host port ```3030``` to the container port ```3030``` where the Fuseki endpoint actually runs. 
+
+Be sure that the port ```3030``` of the host machine is free and not used by another process. In such a case you can easily change the port mapping ```-p``` of the command by using a port you know is available e.g., ```-p 3131:3030```.
+
+The access to the SPARQL endpoint requires admin authentication, the parameter ```-e ADMIN_PASSWORD=<PWD>``` allows to specify the password to use. Replace ```<PWD>``` with the password you intend to use for authentication.
+
+Now the container is running and you can access the endpoint at ```http://localhost:3030``` using your browser.
+
+![Figure 3. Homepage of the Fusek SPARQL endpoint running on the host machine on port 3030](assets/readme/Fuseki_homepage.png)
+
+
+To create a new dataset, go to the page 'manage' and click on 'new dataset' by specyfing a name e.g., 'HERMES-KG_v1.1'. At this point, the page 'manage' should like the picture below.
+
+![Figure 4. Management page  of the Fusek SPARQL endpoint](assets/readme/Fuseki_manage.png)
+
+Click on the button 'add data' to upload the triples of the HERMES knowledge graph in this repository. To correctly use the version __v1.1__ you should upload both the knowledge graph  ```hermes_kg_rMonti_v1.1.rdf``` and the ontology ```hermes_ontology_v1.1.rdf```. This is necessary to import the ontology into the memory of fuseki since the 'import' commands are not automatically processed by the endpoint.
+
+When both files have been uploaded you can go to the 'query' page to interact with the knowledge by processing some SPARQL queries. 
+
+![Figure 4. Query page of the Fusek SPARQL endpoint](assets/readme/Fuseki_query.png)
+
+The figure above shows the 'query' page and the results obtained by processing the following SPARQL query.
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX arco-core: <https://w3id.org/arco/ontology/core/>
+PREFIX hermes: <http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes#>
+
+SELECT DISTINCT ?poi ?label ?time
+WHERE {	
+    ?poi arco-core:hasCharacteristic ?c .
+    ?c rdf:type hermes:HearingImpairedAccessibility.
+    ?c rdf:type hermes:VisualImpairedAccessibility .
+    ?poi rdfs:label ?label .
+    ?c hermes:visiting_time ?time .
+    FILTER (?time < 60)
+}
+```
+
 
 ## About HerMeS Ontology
 
