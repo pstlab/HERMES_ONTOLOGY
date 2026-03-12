@@ -3,9 +3,9 @@
     <uri id="Imports Wizard Entry" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/1.1" uri="hermes_ontology_v1.1.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/1.1" uri="hermes_ontology_v1.1.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1773267771834" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.0.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773267771834" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_kg_rMonti_v1.0.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773267771834" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.1.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773267771834" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/kg/" uri="hermes_kg_rMonti_v1.1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773312473690" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773312473690" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_kg_rMonti_v1.0.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773312473690" name="duplicate:http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/" uri="hermes_ontology_v1.1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773312473690" name="http://www.istc.cnr.it/pstlab/ontologies/2023/1/hermes/kg/" uri="hermes_kg_rMonti_v1.1.rdf"/>
     </group>
 </catalog>
