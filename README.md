@@ -1,4 +1,4 @@
-e# HerMeS Ontology
+# HerMeS Ontology
 An ontology to support thematic descriptions of cultural heritage
 
 ## Introduction
