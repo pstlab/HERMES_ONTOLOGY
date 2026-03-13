@@ -7,9 +7,15 @@ This repository contains the ontological structure and the knowledge graph used 
 
 ## Main content
 
-🔹hermes_ontology_v1.1.rdf → This is the HerMeS Ontology: a formal definition of the concepts and relationships used within the project's domain.
+🔹__hermes_ontology_v1.1.rdf__ → This is the HerMeS Ontology: a formal definition of the concepts and relationships used within the project's domain.
 
-🔹hermes_kg_rome_rMonti_v1.1.rdf → This is the HerMeS Knowledge Graph (KG): a representation of cultural heritage data based on the HerMeS ontology. The dataset includes 100 tangible and intangible cultural entities distributed across two Roman districts: Rione Monti and Rione Esquilino.
+🔹__hermes_kg_rome_rMonti_v1.1.rdf__ → This is the HerMeS Knowledge Graph (KG): a representation of cultural heritage data based on the HerMeS ontology. The dataset includes 100 tangible and intangible cultural entities distributed across two Roman districts: Rione Monti and Rione Esquilino.
+
+### Previous versions
+
+Please note that the repository contains previous versions of the ontology and the knowledge graph (v1.0). These versions are kept for tracking changes and revisions during the development process of the ontology. 
+
+For usage, please refer always to the latest version published within this repository.
 
 ## How to use
 
@@ -17,7 +23,7 @@ If you don't already have an ontology editor, we recommend using Protégé (Vers
 
 To explore the HerMeS ontological structure:
 
-1️⃣ Download the ontology file hermes_ontology_v1.0.rdf
+1️⃣ Download the ontology file __hermes_ontology_v1.1.rdf__.
 
 2️⃣ Open it with Protégé or any other ontology editor
 *Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as w3id.org/arco/ontology/immovable-property/0.2 might be deprecated or temporarily unavailable.*
@@ -28,7 +34,7 @@ To explore the HerMeS ontological structure:
 
 To explore the HerMeS Knowledge Graph, including individuals from Rione Monti and Rione Esquilino:
 
-1️⃣ Download the file hermes_kg_rome_rMonti_v1.0.rdf.
+1️⃣ Download the file __hermes_kg_rome_rMonti_v1.1.rdf__.
 
 2️⃣ Open it with Protégé or any other ontology editor.
 *Note: When opening the ontology you may see a warning about failed imports. This can be safely ignored, as some ontologies imported by ArCo—such as w3id.org/arco/ontology/immovable-property/0.2 might be deprecated or temporarily unavailable.*
@@ -111,7 +117,6 @@ The design of the HERMES ontology and the resulting knowledge graph was guided b
 - Topic: POIs are linked to thematic/topic-based descriptions characterizing the entity from a certain perspective. \HerMeS\ interprets the description of a cultural entity as the aggregation of multiple topic-based descriptive contents. The same POI/entity is thus described according to multiple thematic axes. For example, a church might be described from (synergetic) historical, artistic, architectural, and religious perspectives.
 - Visiting time: each POI has an estimated visiting time, this is needed to generate itineraries based on a given time range. Eg. The user has only four hours to be able to carry out the itinerary.
 - Inclusive accessibility: each POI, wherever possible, is enriched with information related to inclusive accessibility, to address questions such as: Is the POI accessible to groups, elderly, or people with motor, visual, or hearing disability?
-\end{itemize}
 
 The design process considered also the integration of structured meta-information to support the authoring of cultural information. HERMES specifically integrates the PROV-O ontology \[5\] to represent meta-information about editing activities of cultural entities in a knowledge graph. In addition, several refinements of the ArCO ontological model have been considered to better support the layered and thematic correlation of tangible and intangible cultural entities. Such extensions concern: (i) the introduction of new classes (TerritorialUnit, TopographicContext, MonumentalUnit, CulturalPropertyDescription, etc.); (ii) the refinement of existing classes (CulturalPropertyResidual, IntangibleCulturalProperty, Topic), and; (iii) the introduction of new data and object properties (visiting\_time, inclusive\_accessibility, etc.). 
 
